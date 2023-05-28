@@ -8,8 +8,77 @@
     <title>Belajar HTML & CSS</title>
 </head>
 <body>
-    <!-- h1 adalah Heading -->
-    <h1>Hello World!</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint officia aperiam culpa ad, nulla magnam voluptate itaque corrupti quisquam atque nisi aspernatur rerum eaque perferendis molestias iure asperiores, impedit modi?</p>
+    <!-- h adalah heading, semakin besar angkanya, semakin kecil fontnya -->
+    <!-- Spasi by default -->
+    <!-- Syarat SEO - disarankan - heading awal h1 -->
+    <h1>Hai nama saya Anton</h1>
+     <!-- <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5> -->
+    <!-- ini akan memunculkan barisan h2 sampai h5 dengan font makin mengecil -->
+    <hr>
+    <ul> 
+        <li><a href="">Profil Singkat</a></li>
+        <li><a href="">Biodata</a></li>
+        <li><a href="">Riwayat Pendidikan</a></li>
+        <li><a href="">Hobi</a></li>
+        <li><a href="">Kontak</a></li>
+        <li><a href="Pages/about.html">About</a></li>
+        <!-- untuk external link, cukup copy URL link yang dituju -->
+        <!-- a href="" memberikan link; ditutup dengan /a -->
+        <!-- UL - Unordered List (tanpa angka - bullet) -->
+        <!-- OL - Ordered List (dengan angka - number) -->
+    </ul>
+    <h2>Profil Singkat</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A illum numquam similique quod, totam unde molestiae. Excepturi, velit illo officia quibusdam voluptas cumque aliquam ad. Omnis perferendis incidunt enim velit.</p>
+    <img src="Images/avataaars.png" alt="Image Profil" width="200px"/>
+    <!-- Ada beberapa tag HTML yang tidak perlu diakhiri dengan tag penutup. IMG adalah salah satunya -->
+    <!-- alt - jika image tidak termuat (loaded), yang muncul adalah text pada Alt -->
+
+    <h2>Biodata</h2>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Tempat,Tanggal Lahir</th>
+            <th>Hobi</th>
+        </tr>
+
+        <tr>
+            <td>Antonius</td>
+            <td>Bandung, Maret 1990</td>
+            <td>Bermusik</td>
+        </tr>
+    </table>
+
+    <h2>Kontak</h2>
+    <p>Jalan Arcadia 8<br>
+        Bandung<br>
+        Jawa Barat<br>
+    </p>
+
+    <form>
+        <h4>Mari Berkolaborasi</h4>
+        <label>Nama</label>
+        <br>
+        <Input type="text" placeholder="Nama Lengkap Anda"/>
+
+        <br><br>
+        <label>Email</label>
+        <br>
+        <Input type="email" placeholder="Email Lengkap Anda"/>
+
+        <br><br>
+        <label>Pesan</label>
+        <br>
+        <textarea type="textarea">
+        </textarea>
+
+        <br><br>
+        <input type="button" value="Submit" />
+
+    </form>
+
+<p>Copyright 2023 - Antonius Cahyana</p>
 </body>
 </html>
