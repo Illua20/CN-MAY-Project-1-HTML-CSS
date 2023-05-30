@@ -4,60 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Viewport untuk mobile, responsiveness -->
     <title>Belajar HTML & CSS</title>
+    <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <!-- h adalah heading, semakin besar angkanya, semakin kecil fontnya -->
-    <!-- Spasi by default -->
-    <!-- Syarat SEO - disarankan - heading awal h1 -->
-    <h1>Hai nama saya Anton</h1>
-     <!-- <h2>h2</h2>
-    <h3>h3</h3>
-    <h4>h4</h4>
-    <h5>h5</h5> -->
-    <!-- ini akan memunculkan barisan h2 sampai h5 dengan font makin mengecil -->
-    <hr>
-    <ul> 
-        <li><a href="">Profil Singkat</a></li>
-        <li><a href="">Biodata</a></li>
-        <li><a href="">Riwayat Pendidikan</a></li>
-        <li><a href="">Hobi</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="Pages/about.html">About</a></li>
-        <!-- untuk external link, cukup copy URL link yang dituju -->
-        <!-- a href="" memberikan link; ditutup dengan /a -->
-        <!-- UL - Unordered List (tanpa angka - bullet) -->
-        <!-- OL - Ordered List (dengan angka - number) -->
-    </ul>
-    <h2>Profil Singkat</h2>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A illum numquam similique quod, totam unde molestiae. Excepturi, velit illo officia quibusdam voluptas cumque aliquam ad. Omnis perferendis incidunt enim velit.</p>
-    <img src="Images/avataaars.png" alt="Image Profil" width="200px"/>
-    <!-- Ada beberapa tag HTML yang tidak perlu diakhiri dengan tag penutup. IMG adalah salah satunya -->
-    <!-- alt - jika image tidak termuat (loaded), yang muncul adalah text pada Alt -->
+    <div class="section-header" id="header">
+    <div class="container">
+        <!-- h adalah heading, semakin besar angkanya, semakin kecil fontnya -->
+        <!-- Spasi by default -->
+        <!-- Syarat SEO - disarankan - heading awal h1 -->
+        <h1 class="title-h1">Hai nama saya Anton</h1>
+        <!-- <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>h4</h4>
+        <h5>h5</h5> -->
+        <!-- ini akan memunculkan barisan h2 sampai h5 dengan font makin mengecil -->
+        <hr>
+        </div>
+        </div>
+    
+        <div class="section-menu" id="menu">
+            <div class="container">
+        <ul> 
+            <li><a href="#menu">Home</a></li>
+            <li><a href="#profil">Profil Singkat</a></li>
+            <li><a href="#biodata">Biodata</a></li>
+            <li><a href="#biodata">Riwayat Pendidikan</a></li>
+            <li><a href="#biodata">Hobi</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+            <li><a href="Pages/about.html">About</a></li>
+            <!-- untuk external link, cukup copy URL link yang dituju -->
+            <!-- a href="" memberikan link; ditutup dengan /a -->
+            <!-- UL - Unordered List (tanpa angka - bullet) -->
+            <!-- OL - Ordered List (dengan angka - number) -->
+        </ul>
+    </div>
+    </div>
+    <div class="section-profil" id="profil">
+        <div class="container">
+        <h2>Profil Singkat</h2>
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A illum numquam similique quod, totam unde molestiae. Excepturi, velit illo officia quibusdam voluptas cumque aliquam ad. Omnis perferendis incidunt enim velit.</p>
+             <img src="Images/avataaars.png" alt="Image Profil" width="200px"/>
+            <!-- Ada beberapa tag HTML yang tidak perlu diakhiri dengan tag penutup. IMG adalah salah satunya -->
+            <!-- alt - jika image tidak termuat (loaded), yang muncul adalah text pada Alt -->
+        </div>
+    </div>
 
-    <h2>Biodata</h2>
-    <table>
-        <tr>
-            <th>Nama</th>
-            <th>Tempat,Tanggal Lahir</th>
-            <th>Hobi</th>
-        </tr>
+    <div class="section-biodata" id="biodata">
+        <div class="container">
+        <h2>Biodata</h2>
+             <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tempat,Tanggal Lahir</th>
+                    <th>Hobi</th>
+                </tr>
 
-        <tr>
-            <td>Antonius</td>
-            <td>Bandung, Maret 1990</td>
-            <td>Bermusik</td>
-        </tr>
-    </table>
+                <tr>
+                    <td>Antonius</td>
+                    <td>Bandung, Maret 1990</td>
+                    <td>Bermusik</td>
+                </tr>
+             </table>
+</div>
+</div>
 
+<div class="section-kontak" id="kontak">
+    <div class="container">
     <h2>Kontak</h2>
     <p>Jalan Arcadia 8<br>
         Bandung<br>
         Jawa Barat<br>
     </p>
+    </div>
+    </div>
 
-    <form>
+    <div class="section-form" id="form">
+        <div class="container">
+    <form class="form-contact">
         <h4>Mari Berkolaborasi</h4>
         <label>Nama</label>
         <br>
@@ -75,10 +99,17 @@
         </textarea>
 
         <br><br>
-        <input type="button" value="Submit" />
+        <input type="button" value="Submit" class="button-submit" />
 
     </form>
+    </div>
+    </div>
 
+    <div class="section-copyright">
+        <div class="container">
 <p>Copyright 2023 - Antonius Cahyana</p>
+</div>
+</div>
+
 </body>
 </html>

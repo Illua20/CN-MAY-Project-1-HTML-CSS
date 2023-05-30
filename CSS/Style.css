@@ -1,0 +1,68 @@
+body{background: #dedede;
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.title-h1{
+    color:royalblue;
+}
+
+h1,h2,h3,h4,h5,h6{text-transform: uppercase;}
+
+
+.container{
+    max-width: 512px;
+    margin:0 auto;
+    /* Margin di luar box */
+    text-align: center;
+    padding: 30px 0px;
+    /* Padding di dalam box */
+}
+
+.section-copyright{
+    color:royalblue;
+}
+
+.section-profil{
+    background-color: rgb(219, 179, 19);
+    display: flex;
+}
+
+table{
+    width: 100%;
+}
+
+table,th,td{
+    border: solid 1px;
+    border-collapse: collapse;
+}
+
+.form-contact{
+    width: 512px;
+}
+
+input,textarea,button{
+    width: 100%;
+    box-sizing:border-box;
+    padding: 10 px;
+}
+
+.button-submit{
+    background-color: blanchedalmond;
+    border-color: rgb(187, 148, 19);
+    cursor:pointer;
+}
+
+.button-submit:hover{
+    background-color: rgb(227, 181, 112);
+}
+
+.section-menu ul{
+    display: flex;
+    margin-left: -50px;
+}
+
+.section-menu ul li{
+    list-style: none;
+    margin: 0px 10px;
+}
